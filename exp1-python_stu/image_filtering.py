@@ -93,7 +93,7 @@ def getPSNR(ori_img, en_img):
     PSNR = 10 * math.log(MAX * MAX / MSE, 10)
     return PSNR
 
-
+#主函数
 if __name__ == '__main__':
     # 1. 从test文件夹中选一张图进行平滑低通滤波
     img = cv2.imread("1_smooth.jpg")

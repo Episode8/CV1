@@ -46,7 +46,7 @@ def RGB2YUV_enhance(img, lightness_en=3.5):
     res_RGB = res_RGB.astype(np.uint8)
     return temp_YUV, res_RGB
 
-
+#主函数
 if __name__ == '__main__':
     img = cv2.imread("Lena.jpg")
     imgyuv, res_rgb = RGB2YUV_enhance(img)
